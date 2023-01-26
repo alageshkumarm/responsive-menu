@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1 class="navbarnd">
+            toggle
+        </h1>
+        <ul class="navmenu" >
+            <li class="nav-items"><a href="#" class="nav-link">home</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">about</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">help</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">contact</a></li>
+        </ul>
+    
+    
+     
+        
+    </div>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <i class="fas fa-times" id="clse"></i>
+    
+    
+
+
+    <script>
+        var hamburgerEl=document.querySelector(".hamburger");
+        var menuEl=document.querySelector(".navmenu");
+        var closeEl=document.getElementById("clse");
+
+        hamburgerEl.addEventListener('click',()=>{
+           hamburgerEl.classList.toggle("active");
+           menuEl.classList.toggle("active");
+           closeEl.classList.toggle("active");
+        })
+        closeEl.addEventListener('click',()=>{
+            hamburgerEl.classList.remove("active");
+            menuEl.classList.remove("active");
+            closeEl.classList.remove("active");
+        })
+    </script>
+
+</body>
+</html>
